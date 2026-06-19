@@ -1,0 +1,12 @@
+{
+  "sec_edgar": {
+    "command": "python",
+    "args": ["-m", "market_research_agent.mcp_servers.edgar_server"],
+    "transport": "stdio"
+  },
+  "internal_datastore": {
+    "command": "python",
+    "args": ["-m", "market_research_agent.mcp_servers.datastore_server"],
+    "transport": "stdio"
+  }
+}

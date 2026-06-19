@@ -1,0 +1,19 @@
+[project]
+name = "market-research-agent"
+version = "0.1.0"
+description = "Autonomous competitor-analysis research agent (LangGraph + Nebius + DuckDuckGo)"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+market-research = "market_research_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

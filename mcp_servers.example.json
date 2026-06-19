@@ -1,0 +1,17 @@
+{
+  "hacker_news": {
+    "command": "python",
+    "args": ["-m", "market_research_agent.mcp_servers.hn_server"],
+    "transport": "stdio"
+  },
+  "internal_docs": {
+    "url": "http://localhost:8000/mcp",
+    "transport": "streamable_http"
+  },
+  "crunchbase": {
+    "command": "npx",
+    "args": ["-y", "@example/crunchbase-mcp"],
+    "transport": "stdio",
+    "env": { "CRUNCHBASE_API_KEY": "your_key_here" }
+  }
+}

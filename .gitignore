@@ -1,0 +1,24 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.egg-info/
+build/
+dist/
+out/
+# Local-only docs (kept on disk, not published)
+project_prompt.md
+PROJECT_READOUT.md
+TECH_DEMO.md
+PROJECT_DOCUMENT.md
+PROJECT_DOCUMENT.docx
+
+# Generated run outputs & scratch logs (kept local, not committed)
+*.log
+mcp_test.json
+/*.html
+samples/*.html
+!samples/notion_briefing.html

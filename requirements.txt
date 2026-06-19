@@ -1,0 +1,28 @@
+# Core agent stack
+langgraph>=0.2.50
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0        # OpenAI-compatible client -> points at Nebius
+
+# Tools
+ddgs>=6.0.0                    # DuckDuckGo search (no API key required)
+trafilatura>=1.12.0           # Clean main-content extraction for fetched pages
+httpx>=0.27.0
+
+# MCP — powers the bundled Hacker News tool (hn_search), loaded by default.
+langchain-mcp-adapters>=0.3.0
+mcp>=1.28.0
+# Pinned to the last release with a prebuilt wheel for this machine's platform
+# (newer cryptography ships sdist-only here and fails to build without Rust).
+cryptography<44
+
+# Utilities
+pydantic>=2.7.0
+python-dotenv>=1.0.0
+tenacity>=8.3.0
+
+# Tests
+pytest>=8.0.0
+
+# --- Optional extras (uncomment to enable) ---
+# tavily-python>=0.5.0              # Higher-quality search backend (set TAVILY_API_KEY)

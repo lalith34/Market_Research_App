@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Competitive Analysis — Notion</title><style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --ink: #1c2330; --muted: #5b6573;
+  --line: #e4e8ee; --accent: #2f6df6;
+  --good: #1f9d57; --good-bg: #e9f7ef; --bad: #d6453d; --bad-bg: #fdecea;
+  --opp: #2f6df6; --opp-bg: #eaf1fe; --thr: #c2790b; --thr-bg: #fbf1de;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 920px; margin: 0 auto; padding: 40px 24px 80px; }
+header h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+.meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 22px 26px; margin-bottom: 22px; }
+h2 { font-size: 1.15rem; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.05rem; margin: 0 0 4px; }
+ul { margin: 6px 0; padding-left: 20px; }
+li { margin: 3px 0; }
+a { color: var(--accent); text-decoration: none; word-break: break-all; }
+a:hover { text-decoration: underline; }
+.muted { color: var(--muted); font-style: italic; }
+.takeaways li { margin: 6px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: #f0f3f8; font-weight: 600; }
+.swot { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.swot .quad { border-radius: 10px; padding: 14px 16px; }
+.swot h4 { margin: 0 0 8px; font-size: 0.95rem; }
+.swot ul { padding-left: 18px; }
+.q-s { background: var(--good-bg); border: 1px solid var(--good); }
+.q-s h4 { color: var(--good); }
+.q-w { background: var(--bad-bg); border: 1px solid var(--bad); }
+.q-w h4 { color: var(--bad); }
+.q-o { background: var(--opp-bg); border: 1px solid var(--opp); }
+.q-o h4 { color: var(--opp); }
+.q-t { background: var(--thr-bg); border: 1px solid var(--thr); }
+.q-t h4 { color: var(--thr); }
+.profile { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.profile:last-child { border-bottom: 0; }
+.profile .one-liner { color: var(--muted); font-style: italic; margin: 0 0 10px; }
+.tag { display: inline-block; background: #eef1f6; color: var(--muted);
+  border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; margin: 2px 4px 2px 0; }
+.own { display: inline-block; font-weight: 700; border-radius: 999px;
+  padding: 3px 12px; font-size: 0.82rem; margin: 2px 0 8px; border: 1px solid; }
+.own-pub { background: var(--good-bg); color: var(--good); border-color: var(--good); }
+.own-priv { background: #eef1f6; color: #3a4250; border-color: #c7ccd6; }
+.own-unk { background: var(--thr-bg); color: var(--thr); border-color: var(--thr); }
+.loc-us { background: var(--opp-bg); color: var(--opp); border-color: var(--opp); }
+.loc-intl { background: #efeafe; color: #534ab7; border-color: #7f77dd; }
+.loc-unk { background: #eef1f6; color: #3a4250; border-color: #c7ccd6; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.label { font-weight: 600; font-size: 0.9rem; margin: 12px 0 4px; }
+details { margin-top: 10px; }
+summary { cursor: pointer; color: var(--muted); font-size: 0.88rem; }
+footer { color: var(--muted); font-size: 0.82rem; text-align: center; margin-top: 30px; }
+@media (max-width: 640px) { .swot, .cols { grid-template-columns: 1fr; } }
+</style></head><body><div class="wrap"><header><h1>Competitive Analysis — Notion</h1><div class="meta">Generated 2026-06-18 · Competitors analyzed: Coda, Atlassian (Confluence), Obsidian</div></header><section><h2>Executive Summary</h2><p>Notion leads the all-in-one workspace category, flanked by enterprise-entrenched Atlassian and privacy-first Obsidian.</p></section><section><h2>Key Takeaways</h2><div class="takeaways"><ul><li>Atlassian is the main enterprise threat via Jira bundling.</li><li>Obsidian signals demand for local-first data ownership.</li><li>Coda competes most directly on flexible docs.</li></ul></div></section><section><h2>SWOT — Notion</h2><p class="muted">How Notion stands in this competitive field.</p><div class="swot"><div class="quad q-s"><h4>Strengths</h4><ul><li>Best-in-class all-in-one UX</li><li>Strong template ecosystem</li></ul></div><div class="quad q-w"><h4>Weaknesses</h4><ul><li>Performance at scale</li><li>Limited offline support</li></ul></div><div class="quad q-o"><h4>Opportunities</h4><ul><li>AI-native workflows</li><li>Enterprise expansion</li></ul></div><div class="quad q-t"><h4>Threats</h4><ul><li>Atlassian bundling pressure</li><li>Local-first privacy trend (Obsidian)</li></ul></div></div></section><section><h2>Pricing at a Glance</h2><table><thead><tr><th>Competitor</th><th>Plan</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td>Coda</td><td>Free</td><td>$0</td><td>Unlimited docs</td></tr><tr><td></td><td>Pro</td><td>$10/user/mo</td><td>Automations, version history</td></tr><tr><td>Atlassian (Confluence)</td><td>Standard</td><td>$5.16/user/mo</td><td>Up to 50k users</td></tr><tr><td>Obsidian</td><td>—</td><td class="muted">Not found</td><td></td></tr></tbody></table></section><section><h2>Competitor Profiles</h2><div class="profile"><h3>Coda — <a href="https://coda.io">https://coda.io</a></h3><div><span class="own own-priv">Privately held</span> <span class="own loc-us">US-based — United States</span></div><p class="one-liner">Doc-database hybrid for teams.</p><p><strong>Positioning:</strong> All-in-one doc that scales from a note to an app.</p><p class="label">Target segments</p><span class="tag">Startups</span><span class="tag">Product teams</span><div class="cols"><div><p class="label">Key features</p><ul><li>Tables</li><li>Packs</li><li>Buttons</li><li>Automations</li></ul></div><div><p class="label">Pricing</p><ul><li><strong>Free:</strong> $0 — Unlimited docs</li><li><strong>Pro:</strong> $10/user/mo — Automations, version history</li></ul></div><div><p class="label">Strengths</p><ul><li>Flexible building blocks</li><li>Generous free tier</li></ul></div><div><p class="label">Weaknesses / gaps</p><ul><li>Steeper learning curve</li></ul></div></div><p class="label">Recent news</p><ul><li>Raised $100M Series D (2021)</li></ul><details><summary>Sources</summary><ul><li><a href="https://coda.io/pricing">https://coda.io/pricing</a></li></ul></details></div><div class="profile"><h3>Atlassian (Confluence) — <a href="https://atlassian.com">https://atlassian.com</a></h3><div><span class="own own-pub">Publicly traded (NASDAQ: TEAM)</span> <span class="own loc-intl">Non-US — Australia</span></div><p class="one-liner">Enterprise wiki &amp; collaboration suite.</p><p><strong>Positioning:</strong> Knowledge base tightly integrated with Jira for large orgs.</p><p class="label">Target segments</p><span class="tag">Enterprises</span><span class="tag">Engineering orgs</span><div class="cols"><div><p class="label">Key features</p><ul><li>Spaces</li><li>Jira integration</li><li>Templates</li></ul></div><div><p class="label">Pricing</p><ul><li><strong>Standard:</strong> $5.16/user/mo — Up to 50k users</li></ul></div><div><p class="label">Strengths</p><ul><li>Deep enterprise integration</li><li>Established brand</li></ul></div><div><p class="label">Weaknesses / gaps</p><ul><li>Heavier, less modern UX</li></ul></div></div><p class="label">Recent news</p><ul><li>Expanded Rovo AI across the suite (2025)</li></ul><details><summary>Sources</summary><ul><li><a href="https://atlassian.com/software/confluence/pricing">https://atlassian.com/software/confluence/pricing</a></li></ul></details></div><div class="profile"><h3>Obsidian — <a href="https://obsidian.md">https://obsidian.md</a></h3><div><span class="own own-priv">Privately held</span> <span class="own loc-intl">Non-US — Canada</span></div><p class="one-liner">Local-first markdown knowledge base.</p><p><strong>Positioning:</strong> Privacy-first personal notes on local files.</p><p class="label">Target segments</p><span class="tag">Individuals</span><span class="tag">Researchers</span><div class="cols"><div><p class="label">Key features</p><ul><li>Local markdown</li><li>Graph view</li><li>Community plugins</li></ul></div><div><p class="label">Strengths</p><ul><li>Data ownership</li><li>Extensible</li></ul></div><div><p class="label">Weaknesses / gaps</p><ul><li>Weaker real-time collaboration</li></ul></div></div><p class="label">Recent news</p><p class="muted">None found.</p><details><summary>Sources</summary><ul><li><a href="https://obsidian.md/pricing">https://obsidian.md/pricing</a></li></ul></details></div></section><footer>Produced by the Market Research Agent (LangGraph). Insights are model-extracted from public web sources — verify before acting.</footer></div></body></html>
